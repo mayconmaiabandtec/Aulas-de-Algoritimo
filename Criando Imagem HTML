@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+    <body>
+         <h2>Exibindo mensagens numa pagina HTML</h2>
+            <!--primeira tecnica: obter imagem de outro site--><img src="http://www.pudim.com.br/pudim.jpg" title="pudim" alt="Foto do pudim">
+            
+
+
+    </body>
+</html>
