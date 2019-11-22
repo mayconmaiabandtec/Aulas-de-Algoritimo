@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="bairrovalor"> <br>
+    <button onclick="cadastrar_bairro()">cadastrar bairro</button> <br>
+
+    <input type="text" id="verificar_bairro">
+    <button onclick="relembrarMoradia()">relembrar moradia</button>
+
+    <div id="mensagem"></div>
+</body>
+</html>
+
+<script>
+    var bairros = [];
+
+    function cadastrar_bairro(){
+        
+
+        
+    bairros.push(bairrovalor.value);
+}
+    
+    
+    
+    function relembrarMoradia(){
+
+   var verificarValor =  parseInt(verificar_bairro.value);
+   verificarValor = verificarValor - 1;
+   mensagem.innerHTML = bairros[verificarValor];
+
+
+   if(bairros.length >= verificarValor){
+    mensagem.innerHTML = bairros(verificarValor);
+   }else{
+    mensagem.innerHTML = `vc ainda não morou num ${parseInt(verificar_bairro.value)}`;
+   }
+  
+   
+
+
+}
+
+</script>

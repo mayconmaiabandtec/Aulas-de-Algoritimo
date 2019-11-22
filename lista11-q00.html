@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exercicio 11</title>
+</head>
+<body>
+    <h2>exercicio 11</h2>
+
+    <input type="text" id="pesquisa"><br>
+    <button onclick="pesquisar()">Pesquisar</button>
+
+    <div id="nome"></div>
+</body>
+</html>
+<script>
+
+var isso = ['uva', 'pêra', 'morango', 'maçã', 'pêra'];
+
+function pesquisar() {    
+    var opa = 0;
+
+    for (var indice = 0; indice < isso.length; indice++) {
+        if (pesquisa.value == isso[indice]) {
+            opa++;
+        }
+    }
+
+    var maycon;
+    if (opa >= 1) {
+        maycon = `A fruta ${pesquisa.value} existe na lista`;
+    } else {
+        maycon = `Não existe a fruta ${pesquisa.value} na lista`
+    }
+
+    nome.innerHTML = resultado;
+}
+</script>

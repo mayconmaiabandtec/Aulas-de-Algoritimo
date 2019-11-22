@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    Digite um numero
+    <input id="numero"> <br>
+    <button onclick="cadastrar_numero()">Cadastrar</button> <br>
+    <br>
+    <div id="lista_numero"></div>
+</body>
+</html>
+<script>
+    var numeros = [];
+function cadastrar_numero(){
+    
+    numeros.push(numero.value);
+
+    lista_numero.innerHTML = '';
+    
+    var maior = 0;
+    var menor = 0;
+
+
+    for(var indice = 0; indice < numeros.length; indice++){
+        numeros[indice]
+        lista_numero.innerHTML += `${indice +1} valor: ${numeros[indice]} <br>`;
+     
+     
+        if(indice == 0 ){
+            maior = numeros[indice];
+            menor = numeros[indice] ;
+        } else{
+            if(numeros[indice] > maior ){
+                maior = numeros[indice];
+            }
+            if(numeros[indice] < menor){
+                menor = numeros[indice];
+            }
+        }
+    }
+    
+}
+</script>
